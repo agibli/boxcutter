@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "boxcutter", "boxcutter.vcproj", "{47E7A537-7216-4D05-8680-F06CE5141012}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{47E7A537-7216-4D05-8680-F06CE5141012}.Debug|Win32.ActiveCfg = Debug|Win32
+		{47E7A537-7216-4D05-8680-F06CE5141012}.Debug|Win32.Build.0 = Debug|Win32
+		{47E7A537-7216-4D05-8680-F06CE5141012}.Release|Win32.ActiveCfg = Release|Win32
+		{47E7A537-7216-4D05-8680-F06CE5141012}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -33,8 +33,13 @@
 #include "bmp.cpp"
 #include "png.cpp"
 
+// Visual C++ lacks POSIX strcasecmp function
+#ifdef _MSC_VER
+#   define strcasecmp _stricmp
+#endif
 
-#define BOX_VERSION "1.6"
+
+#define BOX_VERSION "1.6a"
 
 // constants
 const char* g_usage = "\n\
@@ -224,7 +229,7 @@ public:
                                   title,
                                   style,
                                   // dimensions
-                                  0, 0, rect.right, rect.bottom,
+                                  rect.left, rect.top, rect.right - rect.left, rect.bottom - rect.top,
                                   0, // no parent
                                   0, // no menu
                                   hinst, //module_instance,
@@ -591,7 +596,6 @@ int main(int argc, char **argv)
     } else {
         // manually acquire coordinates
         win.show();
-        win.maximize();
         win.activate();
         
         main_loop(&win);
